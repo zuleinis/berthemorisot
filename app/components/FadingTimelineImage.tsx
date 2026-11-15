@@ -34,7 +34,7 @@ export const FadingTimelineImage = ({
   );
   return (
     <motion.figure
-      className="absolute inset-0 flex flex-col items-center justify-center px-6"
+      className="absolute inset-0 flex flex-col items-center justify-center px-24"
       style={{
         opacity,
         pointerEvents: active ? "auto" : "none",
