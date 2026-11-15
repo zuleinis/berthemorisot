@@ -44,7 +44,7 @@ export const ScrollingTimelineEvent = ({
   );
   return (
     <motion.div
-      className="absolute inset-0 flex items-center justify-center px-6"
+      className="absolute inset-0 flex items-center justify-center px-24"
       style={{ y, opacity }}
     >
       <TimelineEvent event={event} />
