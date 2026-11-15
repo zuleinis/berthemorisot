@@ -8,6 +8,7 @@ import {
 import { ScrollingTimelineEvent } from "./ScrollingTimelineEvent";
 import { timelineEvents } from "../../data";
 import { FadingTimelineImage } from "./FadingTimelineImage";
+import { TimelineProgress } from "./TimelineProgress";
 
 export const Timeline = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -66,6 +67,10 @@ export const Timeline = () => {
           ))}
         </motion.div>
         <div className="relative h-full overflow-hidden">
+          <TimelineProgress
+            total={timelineEvents.length}
+            scrollYProgress={scrollYProgress}
+          />
           {timelineEvents.map((event, index) => (
             <ScrollingTimelineEvent
               key={index}
